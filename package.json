@@ -1,0 +1,18 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "Simple timestamp microservice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "timestamp",
+    "microservice"
+  ],
+  "author": "Bryan Jennings",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

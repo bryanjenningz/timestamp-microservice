@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Timestamp Microservice</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+      }
+      code {
+        color: #c7254e;
+        background: #f9f2f4;
+        padding: 3px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Timestamp Microservice</h1>
+    <h4>Example Request</h4>
+    <code><span class="current-url"></span>December%2015,%202015</code>
+    <br>
+    <br>
+    <code><span class="current-url"></span>1450137600</code>
+    <h4>Example Response</h4>
+    <code>{ "unix": 1450137600, "natural": "December 15, 2015" }</code>
+    <script>
+      const urlElements = document.querySelectorAll(".current-url");
+      for (let i = 0; i < urlElements.length; i++) {
+        urlElements[i].textContent = location.href;
+      }
+    </script>
+  </body>
+</html>
